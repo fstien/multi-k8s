@@ -1,4 +1,4 @@
-docker build -t fstien/multi-client: latest -t fstien/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t fstien/multi-client -t fstien/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t fstien/multi-server -t fstien/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t fstien/multi-worker -t fstien/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
